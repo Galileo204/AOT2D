@@ -57,14 +57,14 @@ public abstract class Titan implements Attackee, Mobil, Attacker
 
     public Titan(int baseHealth, int baseDamage, int heightInMeters, int distanceFromBase, int speed, int resourcesValue, int dangerLevel)
     {
-        this.baseHealth = currentHealth;
         this.currentHealth = baseHealth;
+        this.baseHealth = baseHealth;
+        this.baseDamage = baseDamage;
+        this.heightInMeters = heightInMeters;
         this.distanceFromBase = distanceFromBase;
         this.speed = speed;
         this.resourcesValue = resourcesValue;
         this.dangerLevel = dangerLevel;
-        this.heightInMeters = heightInMeters;
-        this.baseDamage = baseDamage;
     }
 
 }
